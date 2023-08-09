@@ -88,6 +88,14 @@ main section> h2{
 .top3 img{
   padding: 80px 0px;
   width: 400px;
+  transition: 0.7s;
+  transition-timing-function: cubic-bezier(0.1, 1.0);
+  transform: scale(0.7);
+}
+
+/* 자동차 크기 커지게 하는 서식 */
+.swiper-slide-active img{
+  transform: scale(1.3);
 }
 /* 자동차 상세 내용 서식 */
 .top3 .detail{
@@ -248,3 +256,77 @@ color: #333;
 .out_txt{ text-align: left; margin: 50px 0; text-indent: -15px;}
 .out_txt2{ text-align:left; margin: 60px 0; text-indent: -15px;}
 
+/* 이벤트 배너 */
+#event{
+  background: #ececec;
+  width: 100%; height: 500px;
+  padding: 60px;
+}
+.e_banner{
+  width: 1200px; height: 440px;
+  margin: 0 auto;
+  position: relative;
+  overflow: hidden;
+}
+.e_banner ul{
+  display: flex;
+  width: 4800px;
+  position: absolute;
+}
+.e_banner .ctrl_btn{
+  display: flex;
+  width: 280px;
+  position: absolute;
+  justify-content: space-around;
+  bottom: 90px;left: 50%;
+  transform: translateX(-50%) ;
+}
+.e_banner .ctrl_btn span{
+  width: 60px;height: 8px;
+  background: #ccc;
+  display: inline-block;
+}
+.act{background: #333 !important;}
+
+/* 캐스퍼 구매 안내 */
+#buy{
+  text-align: center;
+}
+#buy h3{
+  font-size: 24px;
+  padding: 60px 0;
+  font-weight: 500;
+}
+.t_color{
+  color: var(--t-color03);
+}
+#buy ul{
+  width: 1000px;
+  margin: 0 auto;
+  /* border: 1px solid #000; */
+}
+.clearfix::after{/*float속성 때문에 부모 높이가 사라져서, 살려줌*/
+  clear: both;
+  display: block;
+  content: "";
+}
+#buy ul li{
+float: left;
+width: 33.333%;
+margin-bottom: 60px;
+}
+#buy ul li h4{
+  font-size: var(--t-size16);
+  font-weight: bold;
+}
+#buy ul li img{
+  width: 70px;
+  padding: 15px 0;
+}
+#buy ul li .p03{
+  line-height: 20px;
+}
+#buy iframe{
+  width: 1000px;height: 560px;
+  border: none;
+}
