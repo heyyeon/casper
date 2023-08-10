@@ -67,6 +67,8 @@ c_btn.mouseleave(function(){
 Timer = setInterval(moveLeft, 3000); 
 });
 
+ let r_n=Math.floor(Math.random()*5+1); //12345
+ document.getElementById("banner").src="./images/banner"+r_n+".jpg";
 
-
+ 
 });
